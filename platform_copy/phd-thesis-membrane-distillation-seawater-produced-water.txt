@@ -1,0 +1,14 @@
+URL:
+https://stax.strath.ac.uk/concern/theses/6d56zx233
+
+Title:
+Assessment of Membrane Distillation Modules for Seawater Desalination and Oilfield-Produced Water Treatment Applications
+
+Short description (≤250 characters):
+This doctoral thesis experimentally evaluates direct-contact, air-gap and vacuum membrane-distillation modules for seawater, synthetic saline feeds and oilfield-produced water. It examines membrane material, temperature, salinity, flow rate and chan…
+
+Academic website page:
+https://hussainalsairfi.github.io/publications/phd-thesis-membrane-distillation-seawater-produced-water/
+
+Keywords:
+PhD thesis, membrane distillation, DCMD, AGMD, VMD, seawater desalination, oilfield-produced water, hypersaline brine, salt rejection, Kuwait

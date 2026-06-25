@@ -1,0 +1,14 @@
+URL:
+https://doi.org/10.1109/ACCESS.2025.3649764
+
+Title:
+Quantifying the Economic Loss and Operational Implications of Air Pollution on Grid-Connected PV Systems in the Arabian Peninsula: A Machine Learning-Based Analysis
+
+Short description (≤250 characters):
+This IEEE Access study uses a validated Random Forest model and counterfactual clean-air scenarios to estimate energy and financial losses caused by air pollution and module soiling in grid-connected photovoltaic systems across the Arabian Peninsula…
+
+Academic website page:
+https://hussainalsairfi.github.io/publications/air-pollution-economic-loss-pv-arabian-peninsula-machine-learning/
+
+Keywords:
+photovoltaic systems, air pollution, soiling losses, machine learning, Random Forest, economic loss, predictive cleaning, operation and maintenance, Arabian Peninsula, GCC solar energy

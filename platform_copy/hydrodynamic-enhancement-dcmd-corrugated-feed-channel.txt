@@ -1,0 +1,14 @@
+URL:
+https://editorial.neptjournal.com/index.php/1/article/view/2436
+
+Title:
+Hydrodynamic Enhancement of Direct Contact Membrane Distillation Using a Corrugated Feed Channel: A Numerical Study
+
+Short description (≤250 characters):
+This numerical study models a direct-contact membrane-distillation channel fitted with rectangular corrugations. It evaluates how rib height, breadth and pitch alter hydrodynamic mixing, temperature polarization, pressure drop and permeate flux, ide…
+
+Academic website page:
+https://hussainalsairfi.github.io/publications/hydrodynamic-enhancement-dcmd-corrugated-feed-channel/
+
+Keywords:
+direct contact membrane distillation, corrugated feed channel, computational fluid dynamics, temperature polarization, permeate flux, pressure drop, rib geometry, membrane-module design

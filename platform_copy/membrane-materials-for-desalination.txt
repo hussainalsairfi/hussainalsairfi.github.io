@@ -1,0 +1,14 @@
+URL:
+https://doi.org/10.5772/intechopen.1014282
+
+Title:
+Membrane Materials for Desalination
+
+Short description (≤250 characters):
+This open-access chapter reviews the evolution of desalination membrane materials, from cellulose acetate and polyamide thin-film composites to graphene oxide, aquaporin-based membranes and metal-organic frameworks. It compares performance, durabili…
+
+Academic website page:
+https://hussainalsairfi.github.io/publications/membrane-materials-for-desalination/
+
+Keywords:
+desalination membranes, thin-film composites, polyamide, graphene oxide, metal-organic frameworks, aquaporins, chlorine resistance, membrane durability, membrane sustainability

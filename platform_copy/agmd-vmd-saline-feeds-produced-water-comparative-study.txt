@@ -1,0 +1,14 @@
+URL:
+https://doi.org/10.1016/j.dwt.2024.100145
+
+Title:
+Membrane distillation of saline feeds and produced water: A comparative study of an air-gap and vacuum-driven modules
+
+Short description (≤250 characters):
+This comparative experimental study evaluates air-gap membrane distillation and vacuum membrane distillation for saline feeds, Arabian Gulf seawater and oilfield-produced water. It examines temperature, concentration, recirculation flow, air-gap dep…
+
+Academic website page:
+https://hussainalsairfi.github.io/publications/agmd-vmd-saline-feeds-produced-water-comparative-study/
+
+Keywords:
+air-gap membrane distillation, vacuum membrane distillation, Arabian Gulf seawater, oilfield-produced water, hypersaline water, permeate flux, salt rejection, desalination

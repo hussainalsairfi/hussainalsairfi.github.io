@@ -1,0 +1,73 @@
+{
+  "@type": "Person",
+  "@id": "https://hussainalsairfi.github.io/#person",
+  "name": "Hussain Al-Sairfi",
+  "honorificPrefix": "Dr.",
+  "givenName": "Hussain",
+  "familyName": "Al-Sairfi",
+  "jobTitle": "Associate Research Scientist",
+  "email": "mailto:dr.hussain.alsairfi@gmail.com",
+  "url": "https://hussainalsairfi.bio",
+  "mainEntityOfPage": {
+    "@id": "https://hussainalsairfi.github.io/#profile"
+  },
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Kuwait Institute for Scientific Research",
+    "alternateName": "KISR",
+    "url": "https://www.kisr.edu.kw/",
+    "department": {
+      "@type": "Organization",
+      "name": "Water Research Center",
+      "url": "https://www.kisr.edu.kw/en/research-centers/water-copy/?research=1"
+    }
+  },
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "University of Strathclyde",
+    "url": "https://www.strath.ac.uk/"
+  },
+  "identifier": [
+    {
+      "@type": "PropertyValue",
+      "propertyID": "ORCID",
+      "value": "0009-0002-5914-0510"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "Scopus Author ID",
+      "value": "58941908400"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "Web of Science ResearcherID",
+      "value": "NDT-1115-2025"
+    }
+  ],
+  "sameAs": [
+    "https://hussainalsairfi.bio",
+    "https://orcid.org/0009-0002-5914-0510",
+    "https://scholar.google.com/citations?hl=en&user=NWJc8aQAAAAJ",
+    "https://www.scopus.com/authid/detail.uri?authorId=58941908400",
+    "https://www.webofscience.com/wos/author/record/NDT-1115-2025",
+    "https://www.semanticscholar.org/author/Hussain-Al-Sairfi/2287568935",
+    "https://www.researchgate.net/profile/Hussain-Al-Sairfi",
+    "https://www.growkudos.com/profile/hussain_al-sairfi",
+    "https://kisr.academia.edu/HussainAlSairfi",
+    "https://www.linkedin.com/in/hussain-al-sairfi-081aa1362"
+  ],
+  "knowsAbout": [
+    "seawater desalination",
+    "membrane distillation",
+    "produced-water treatment",
+    "brine management",
+    "scaling control",
+    "mineral recovery",
+    "brine valorization",
+    "machine learning for energy systems",
+    "photovoltaic performance",
+    "wind-battery energy management",
+    "water-energy systems",
+    "thermofluids and CFD"
+  ]
+}

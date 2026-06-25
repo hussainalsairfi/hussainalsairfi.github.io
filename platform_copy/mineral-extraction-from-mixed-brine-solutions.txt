@@ -1,0 +1,14 @@
+URL:
+https://doi.org/10.3390/separations12100266
+
+Title:
+Mineral Extraction from Mixed Brine Solutions
+
+Short description (≤250 characters):
+This paper evaluates sulfate-mineral recovery when high-salinity brines are mixed with seawater. A practical model predicts saturation index, precipitation yield and induction time for barite, celestite and calcium-sulfate phases under different mix…
+
+Academic website page:
+https://hussainalsairfi.github.io/publications/mineral-extraction-from-mixed-brine-solutions/
+
+Keywords:
+mixed brine, sulfate minerals, barite, celestite, calcium sulfate, saturation index, induction time, scaling control, brine valorization, resource recovery

@@ -1,0 +1,14 @@
+URL:
+https://doi.org/10.5004/dwt.2023.29942
+
+Title:
+Performance feasibility study of direct contact membrane distillation systems in the treatment of seawater and oilfield-produced brine: the effect of hot- and cold-channel depth
+
+Short description (≤250 characters):
+This laboratory study assesses direct-contact membrane distillation for Arabian Gulf seawater and oilfield-produced brine using polypropylene and PVDF membranes. It evaluates channel depth, temperature, flow rate and feed concentration in relation t…
+
+Academic website page:
+https://hussainalsairfi.github.io/publications/dcmd-seawater-oilfield-produced-brine-channel-depth/
+
+Keywords:
+direct contact membrane distillation, DCMD, Arabian Gulf seawater, oilfield-produced brine, channel depth, polypropylene membrane, PVDF membrane, permeate flux, salt rejection

@@ -1,0 +1,14 @@
+URL:
+https://doi.org/10.1002/ese3.70570
+
+Title:
+Adaptive Fuzzy Energy Management of Wind-Battery Systems With Flexible Desalination Load
+
+Short description (≤250 characters):
+This study develops an adaptive fuzzy energy-management system for a wind-turbine and battery system supplying a flexible reverse-osmosis desalination load. The controller coordinates wind power, battery state of charge and water production while ex…
+
+Academic website page:
+https://hussainalsairfi.github.io/publications/adaptive-fuzzy-wind-battery-desalination-flexible-load/
+
+Keywords:
+adaptive fuzzy control, energy management system, wind energy, battery degradation, reverse osmosis desalination, flexible load, state of charge, water-energy system, AI control

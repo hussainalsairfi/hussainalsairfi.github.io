@@ -1,0 +1,14 @@
+URL:
+https://doi.org/10.3390/pr14010172
+
+Title:
+Modeling the Influence of Ionic Strength on Mineral Solubility in Concentrated Brine Solutions
+
+Short description (≤250 characters):
+This study measures how ionic strength changes the solubility of calcium sulfate and magnesium hydroxide in concentrated brines collected from Kuwait desalination facilities. It identifies non-ideal behavior that can be used to time precipitation, l…
+
+Academic website page:
+https://hussainalsairfi.github.io/publications/ionic-strength-mineral-solubility-kuwait-brines/
+
+Keywords:
+ionic strength, mineral solubility, concentrated brine, calcium sulfate, magnesium hydroxide, scaling control, mineral recovery, Kuwait desalination, brine valorization

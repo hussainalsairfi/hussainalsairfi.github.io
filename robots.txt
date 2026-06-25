@@ -1,0 +1,5 @@
+# Maximum discoverability configuration requested by the site owner.
+User-agent: *
+Allow: /
+
+Sitemap: https://hussainalsairfi.github.io/sitemap.xml

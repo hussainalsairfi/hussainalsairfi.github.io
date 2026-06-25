@@ -1,0 +1,14 @@
+URL:
+https://doi.org/10.1016/j.mtcomm.2026.114897
+
+Title:
+Achieving single solid solution in equimolar AlCrCuFeNi via rapid solidification
+
+Short description (≤250 characters):
+This study uses a 6.5-m drop-tube facility to investigate the effect of cooling rate on equimolar AlCrCuFeNi high-entropy alloy. Rapid solidification suppresses phase complexity, produces a single B2 structure above approximately 10² K/s and increas…
+
+Academic website page:
+https://hussainalsairfi.github.io/publications/alcrcu-feni-high-entropy-alloy-rapid-solidification/
+
+Keywords:
+high-entropy alloy, AlCrCuFeNi, rapid solidification, drop tube, B2 phase, spinodal decomposition, solidification microstructure, microhardness, cooling rate

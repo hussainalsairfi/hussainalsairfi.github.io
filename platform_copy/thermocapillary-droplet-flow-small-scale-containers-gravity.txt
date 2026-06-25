@@ -1,0 +1,14 @@
+URL:
+https://doi.org/10.1007/s12217-026-10253-4
+
+Title:
+Thermocapillary Droplet Flow in Small-scale Containers: the Effect of Gravity
+
+Short description (≤250 characters):
+This numerical investigation tracks an FC-75 droplet suspended in silicone oil inside differentially heated cylindrical containers. Volume-of-Fluid simulations compare zero gravity, normal gravity and combined thermocapillary–buoyancy forcing and de…
+
+Academic website page:
+https://hussainalsairfi.github.io/publications/thermocapillary-droplet-flow-small-scale-containers-gravity/
+
+Keywords:
+thermocapillary flow, Marangoni effect, droplet migration, microgravity, buoyancy, Volume of Fluid, ANSYS Fluent, two-phase flow, surface tension gradient, confined container

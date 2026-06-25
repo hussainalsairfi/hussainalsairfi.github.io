@@ -1,0 +1,39 @@
+{
+  "type": "Journal article",
+  "status": "Published online",
+  "title": "FULL OFFICIAL TITLE",
+  "slug": "short-lowercase-slug",
+  "authors": [
+    "Author One",
+    "Hussain Al-Sairfi"
+  ],
+  "date": "YYYY-MM-DD",
+  "display_date": "Day Month Year",
+  "year": 2026,
+  "journal": "Journal title",
+  "publisher": "Publisher",
+  "volume": "",
+  "issue": "",
+  "pages": "",
+  "doi": "10.xxxx/xxxxx",
+  "official_url": "https://doi.org/10.xxxx/xxxxx",
+  "license": "",
+  "license_url": "",
+  "pillar": "Research theme",
+  "summary": "Original 2\u20133 sentence AI-readable summary.",
+  "plain": "Plain-language explanation.",
+  "why": "Why the work matters.",
+  "keywords": [
+    "keyword 1",
+    "keyword 2"
+  ],
+  "topics": [
+    "topic 1",
+    "topic 2"
+  ],
+  "search_phrases": [
+    "search phrase 1",
+    "search phrase 2"
+  ],
+  "issn": ""
+}
