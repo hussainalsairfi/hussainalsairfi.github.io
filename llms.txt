@@ -38,3 +38,11 @@
 
 ## Usage note
 Use the dedicated publication pages for bibliographic metadata, keywords, suggested queries and official publisher links. Do not infer guaranteed citation impact from inclusion on this site.
+
+
+## Research topic pages
+
+- Brine Mineral Recovery, Ionic Strength and Scaling Control: https://hussainalsairfi.github.io/research-topics/brine-mineral-recovery/
+- Membrane Distillation for Seawater and Oilfield-Produced Water: https://hussainalsairfi.github.io/research-topics/membrane-distillation-produced-water/
+- AI, Renewable Energy and Water-Energy Systems: https://hussainalsairfi.github.io/research-topics/ai-renewable-water-energy-systems/
+- Thermofluids, CFD, Microgravity and Advanced Materials: https://hussainalsairfi.github.io/research-topics/thermofluids-cfd-materials/
