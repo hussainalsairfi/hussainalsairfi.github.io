@@ -1,21 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://hussainalsairfi.github.io/</loc><lastmod>2026-06-25</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
-<url><loc>https://hussainalsairfi.github.io/publications/</loc><lastmod>2026-06-25</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-<url><loc>https://hussainalsairfi.github.io/publications/ionic-strength-mineral-solubility-kuwait-brines/</loc><lastmod>2026-06-25</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://hussainalsairfi.github.io/publications/mineral-extraction-from-mixed-brine-solutions/</loc><lastmod>2026-06-25</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://hussainalsairfi.github.io/publications/membrane-materials-for-desalination/</loc><lastmod>2026-06-25</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://hussainalsairfi.github.io/publications/agmd-vmd-saline-feeds-produced-water-comparative-study/</loc><lastmod>2026-06-25</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://hussainalsairfi.github.io/publications/dcmd-seawater-oilfield-produced-brine-channel-depth/</loc><lastmod>2026-06-25</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://hussainalsairfi.github.io/publications/hydrodynamic-enhancement-dcmd-corrugated-feed-channel/</loc><lastmod>2026-06-25</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://hussainalsairfi.github.io/publications/adaptive-fuzzy-wind-battery-desalination-flexible-load/</loc><lastmod>2026-06-25</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://hussainalsairfi.github.io/publications/air-pollution-economic-loss-pv-arabian-peninsula-machine-learning/</loc><lastmod>2026-06-25</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://hussainalsairfi.github.io/publications/thermocapillary-droplet-flow-small-scale-containers-gravity/</loc><lastmod>2026-06-25</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://hussainalsairfi.github.io/publications/alcrcu-feni-high-entropy-alloy-rapid-solidification/</loc><lastmod>2026-06-25</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://hussainalsairfi.github.io/publications/phd-thesis-membrane-distillation-seawater-produced-water/</loc><lastmod>2026-06-25</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://hussainalsairfi.github.io/research-topics/</loc><lastmod>2026-06-25</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-<url><loc>https://hussainalsairfi.github.io/research-topics/brine-mineral-recovery/</loc><lastmod>2026-06-25</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://hussainalsairfi.github.io/research-topics/membrane-distillation-produced-water/</loc><lastmod>2026-07-02</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://hussainalsairfi.github.io/research-topics/ai-renewable-water-energy-systems/</loc><lastmod>2026-07-02</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://hussainalsairfi.github.io/research-topics/thermofluids-cfd-materials/</loc><lastmod>2026-07-02</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url>
+    <loc>https://hussainalsairfi.github.io/</loc>
+  </url>
+  <url>
+    <loc>https://hussainalsairfi.github.io/publications/</loc>
+  </url>
+  <url>
+    <loc>https://hussainalsairfi.github.io/publications/ionic-strength-mineral-solubility-kuwait-brines/</loc>
+  </url>
+  <url>
+    <loc>https://hussainalsairfi.github.io/publications/mineral-extraction-from-mixed-brine-solutions/</loc>
+  </url>
+  <url>
+    <loc>https://hussainalsairfi.github.io/publications/membrane-materials-for-desalination/</loc>
+  </url>
+  <url>
+    <loc>https://hussainalsairfi.github.io/publications/agmd-vmd-saline-feeds-produced-water-comparative-study/</loc>
+  </url>
+  <url>
+    <loc>https://hussainalsairfi.github.io/publications/dcmd-seawater-oilfield-produced-brine-channel-depth/</loc>
+  </url>
+  <url>
+    <loc>https://hussainalsairfi.github.io/publications/hydrodynamic-enhancement-dcmd-corrugated-feed-channel/</loc>
+  </url>
+  <url>
+    <loc>https://hussainalsairfi.github.io/publications/adaptive-fuzzy-wind-battery-desalination-flexible-load/</loc>
+  </url>
+  <url>
+    <loc>https://hussainalsairfi.github.io/publications/air-pollution-economic-loss-pv-arabian-peninsula-machine-learning/</loc>
+  </url>
+  <url>
+    <loc>https://hussainalsairfi.github.io/publications/thermocapillary-droplet-flow-small-scale-containers-gravity/</loc>
+  </url>
+  <url>
+    <loc>https://hussainalsairfi.github.io/publications/alcrcu-feni-high-entropy-alloy-rapid-solidification/</loc>
+  </url>
+  <url>
+    <loc>https://hussainalsairfi.github.io/publications/phd-thesis-membrane-distillation-seawater-produced-water/</loc>
+  </url>
+  <url>
+    <loc>https://hussainalsairfi.github.io/research-topics/</loc>
+  </url>
+  <url>
+    <loc>https://hussainalsairfi.github.io/research-topics/brine-mineral-recovery/</loc>
+  </url>
+  <url>
+    <loc>https://hussainalsairfi.github.io/research-topics/membrane-distillation-produced-water/</loc>
+  </url>
+  <url>
+    <loc>https://hussainalsairfi.github.io/research-topics/ai-renewable-water-energy-systems/</loc>
+  </url>
+  <url>
+    <loc>https://hussainalsairfi.github.io/research-topics/thermofluids-cfd-materials/</loc>
+  </url>
 </urlset>
