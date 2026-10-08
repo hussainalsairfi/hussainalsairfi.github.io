@@ -16,3 +16,5 @@ https://hussainalsairfi.github.io/research-topics/brine-mineral-recovery/
 https://hussainalsairfi.github.io/research-topics/membrane-distillation-produced-water/
 https://hussainalsairfi.github.io/research-topics/ai-renewable-water-energy-systems/
 https://hussainalsairfi.github.io/research-topics/thermofluids-cfd-materials/
+https://hussainalsairfi.github.io/publications/ro-feed-spacer-geometries-comparative-numerical-evaluation/
+https://hussainalsairfi.github.io/publications/offline-digital-twin-dynamic-ro-kuwait-solar/

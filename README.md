@@ -12,7 +12,7 @@ Static GitHub Pages site prepared for **https://hussainalsairfi.github.io**.
 
 ## What is included
 - One profile homepage and a publication index.
-- Dedicated machine-readable pages for 11 current research outputs, including the doctoral thesis.
+- Dedicated machine-readable pages for 13 current research outputs, including the doctoral thesis.
 - Google Scholar / Highwire citation meta tags.
 - Schema.org JSON-LD for the researcher and every research output.
 - Open Graph cards, sitemap, Atom feed, robots.txt, llms.txt, JSON-LD and CSV metadata.

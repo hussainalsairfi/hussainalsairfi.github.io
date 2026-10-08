@@ -1259,5 +1259,269 @@
         ]
       }
     ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ScholarlyArticle",
+        "@id": "https://hussainalsairfi.github.io/publications/ro-feed-spacer-geometries-comparative-numerical-evaluation/#work",
+        "url": "https://hussainalsairfi.github.io/publications/ro-feed-spacer-geometries-comparative-numerical-evaluation/",
+        "mainEntityOfPage": "https://hussainalsairfi.github.io/publications/ro-feed-spacer-geometries-comparative-numerical-evaluation/",
+        "name": "Comparative Numerical Evaluation of Feed-Spacer Geometries in Reverse Osmosis Modules for Enhanced Water Treatment Sustainability",
+        "headline": "Comparative Numerical Evaluation of Feed-Spacer Geometries in Reverse Osmosis Modules for Enhanced Water Treatment Sustainability",
+        "author": [
+          {
+            "@type": "Person",
+            "name": "Hussain Al-Sairfi",
+            "sameAs": "https://orcid.org/0009-0002-5914-0510"
+          },
+          {
+            "@type": "Person",
+            "name": "Fajer M. Alelaj"
+          },
+          {
+            "@type": "Person",
+            "name": "Mohammad K. Alhamli"
+          },
+          {
+            "@type": "Person",
+            "name": "Mustafa Fadel"
+          },
+          {
+            "@type": "Person",
+            "name": "Hawraa Sabti"
+          }
+        ],
+        "dateModified": "2026-10-08",
+        "description": "This CFD study compares grid, hexagonal and sinusoidal RO feed spacers in ANSYS Fluent. It examines concentration polarization, wall shear and hydraulic losses. The hexagonal design offers the strongest modeled mass-transfer versus pressure-loss balance; advanced geometries still require experimental validation.",
+        "abstract": "This CFD study compares grid, hexagonal and sinusoidal RO feed spacers in ANSYS Fluent. It examines concentration polarization, wall shear and hydraulic losses. The hexagonal design offers the strongest modeled mass-transfer versus pressure-loss balance; advanced geometries still require experimental validation.",
+        "keywords": [
+          "reverse osmosis",
+          "feed spacer",
+          "computational fluid dynamics",
+          "concentration polarization",
+          "hexagonal spacer",
+          "sinusoidal spacer",
+          "wall shear stress",
+          "pressure drop"
+        ],
+        "about": [
+          "reverse osmosis",
+          "feed spacer",
+          "computational fluid dynamics",
+          "concentration polarization",
+          "hexagonal spacer"
+        ],
+        "inLanguage": "en",
+        "sameAs": [
+          "https://doi.org/10.3390/membranes16080265",
+          "https://www.mdpi.com/2077-0375/16/8/265"
+        ],
+        "creator": {
+          "@id": "https://hussainalsairfi.github.io/#person"
+        },
+        "creativeWorkStatus": "Published",
+        "datePublished": "2026-08-10",
+        "identifier": [
+          {
+            "@type": "PropertyValue",
+            "propertyID": "DOI",
+            "value": "10.3390/membranes16080265"
+          }
+        ],
+        "isPartOf": {
+          "@type": "PublicationIssue",
+          "issueNumber": "8",
+          "isPartOf": {
+            "@type": "PublicationVolume",
+            "volumeNumber": "16",
+            "isPartOf": {
+              "@type": "Periodical",
+              "name": "Membranes",
+              "issn": "2077-0375",
+              "publisher": {
+                "@type": "Organization",
+                "name": "MDPI"
+              }
+            }
+          }
+        },
+        "pagination": "265",
+        "license": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://hussainalsairfi.github.io/publications/ro-feed-spacer-geometries-comparative-numerical-evaluation/#webpage",
+        "url": "https://hussainalsairfi.github.io/publications/ro-feed-spacer-geometries-comparative-numerical-evaluation/",
+        "name": "Comparative Numerical Evaluation of Feed-Spacer Geometries in Reverse Osmosis Modules for Enhanced Water Treatment Sustainability",
+        "dateModified": "2026-10-08",
+        "mainEntity": {
+          "@id": "https://hussainalsairfi.github.io/publications/ro-feed-spacer-geometries-comparative-numerical-evaluation/#work"
+        },
+        "isPartOf": {
+          "@id": "https://hussainalsairfi.github.io/#website"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Research profile",
+            "item": "https://hussainalsairfi.github.io/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Publications",
+            "item": "https://hussainalsairfi.github.io/publications/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Comparative Numerical Evaluation of Feed-Spacer Geometries in Reverse Osmosis Modules for Enhanced Water Treatment Sustainability",
+            "item": "https://hussainalsairfi.github.io/publications/ro-feed-spacer-geometries-comparative-numerical-evaluation/"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ScholarlyArticle",
+        "@id": "https://hussainalsairfi.github.io/publications/offline-digital-twin-dynamic-ro-kuwait-solar/#work",
+        "url": "https://hussainalsairfi.github.io/publications/offline-digital-twin-dynamic-ro-kuwait-solar/",
+        "mainEntityOfPage": "https://hussainalsairfi.github.io/publications/offline-digital-twin-dynamic-ro-kuwait-solar/",
+        "name": "An Offline Digital-Twin-Assisted Decision-Support Framework for Dynamic RO Under Kuwait Solar-Availability Conditions",
+        "headline": "An Offline Digital-Twin-Assisted Decision-Support Framework for Dynamic RO Under Kuwait Solar-Availability Conditions",
+        "author": [
+          {
+            "@type": "Person",
+            "name": "Fajer M. Alelaj"
+          },
+          {
+            "@type": "Person",
+            "name": "Mohammed A. Bou-Rabee"
+          },
+          {
+            "@type": "Person",
+            "name": "Mustafa Fadel"
+          },
+          {
+            "@type": "Person",
+            "name": "Shafqat Aziz"
+          },
+          {
+            "@type": "Person",
+            "name": "Adil Aslam Mir"
+          },
+          {
+            "@type": "Person",
+            "name": "Abdulrahman Alharbi"
+          },
+          {
+            "@type": "Person",
+            "name": "Hussain Al-Sairfi",
+            "sameAs": "https://orcid.org/0009-0002-5914-0510"
+          }
+        ],
+        "dateModified": "2026-10-08",
+        "description": "This offline framework combines dynamic RO experimental data from NREL with Kuwait solar context from NASA POWER. Machine-learning models predict permeate flow and estimate specific energy consumption, while an operating-point ranking layer supports decisions. It is an offline process-analysis tool; conductivity prediction remains limited.",
+        "abstract": "This offline framework combines dynamic RO experimental data from NREL with Kuwait solar context from NASA POWER. Machine-learning models predict permeate flow and estimate specific energy consumption, while an operating-point ranking layer supports decisions. It is an offline process-analysis tool; conductivity prediction remains limited.",
+        "keywords": [
+          "offline digital twin",
+          "dynamic pressure operation",
+          "permeate flow rate",
+          "Kuwait",
+          "machine learning",
+          "photovoltaic desalination",
+          "reverse osmosis",
+          "specific energy consumption"
+        ],
+        "about": [
+          "offline digital twin",
+          "dynamic pressure operation",
+          "permeate flow rate",
+          "Kuwait",
+          "machine learning"
+        ],
+        "inLanguage": "en",
+        "sameAs": [
+          "https://doi.org/10.3390/membranes16090281",
+          "https://www.mdpi.com/2077-0375/16/9/281"
+        ],
+        "creator": {
+          "@id": "https://hussainalsairfi.github.io/#person"
+        },
+        "creativeWorkStatus": "Published",
+        "datePublished": "2026-08-23",
+        "identifier": [
+          {
+            "@type": "PropertyValue",
+            "propertyID": "DOI",
+            "value": "10.3390/membranes16090281"
+          }
+        ],
+        "isPartOf": {
+          "@type": "PublicationIssue",
+          "issueNumber": "9",
+          "isPartOf": {
+            "@type": "PublicationVolume",
+            "volumeNumber": "16",
+            "isPartOf": {
+              "@type": "Periodical",
+              "name": "Membranes",
+              "issn": "2077-0375",
+              "publisher": {
+                "@type": "Organization",
+                "name": "MDPI"
+              }
+            }
+          }
+        },
+        "pagination": "281",
+        "license": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://hussainalsairfi.github.io/publications/offline-digital-twin-dynamic-ro-kuwait-solar/#webpage",
+        "url": "https://hussainalsairfi.github.io/publications/offline-digital-twin-dynamic-ro-kuwait-solar/",
+        "name": "An Offline Digital-Twin-Assisted Decision-Support Framework for Dynamic RO Under Kuwait Solar-Availability Conditions",
+        "dateModified": "2026-10-08",
+        "mainEntity": {
+          "@id": "https://hussainalsairfi.github.io/publications/offline-digital-twin-dynamic-ro-kuwait-solar/#work"
+        },
+        "isPartOf": {
+          "@id": "https://hussainalsairfi.github.io/#website"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Research profile",
+            "item": "https://hussainalsairfi.github.io/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Publications",
+            "item": "https://hussainalsairfi.github.io/publications/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "An Offline Digital-Twin-Assisted Decision-Support Framework for Dynamic RO Under Kuwait Solar-Availability Conditions",
+            "item": "https://hussainalsairfi.github.io/publications/offline-digital-twin-dynamic-ro-kuwait-solar/"
+          }
+        ]
+      }
+    ]
   }
 ]

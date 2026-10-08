@@ -605,5 +605,117 @@
       "University of Strathclyde membrane distillation thesis"
     ],
     "issn": ""
+  },
+  {
+    "order": 12,
+    "type": "Journal article",
+    "status": "Published",
+    "title": "Comparative Numerical Evaluation of Feed-Spacer Geometries in Reverse Osmosis Modules for Enhanced Water Treatment Sustainability",
+    "slug": "ro-feed-spacer-geometries-comparative-numerical-evaluation",
+    "authors": [
+      "Hussain Al-Sairfi",
+      "Fajer M. Alelaj",
+      "Mohammad K. Alhamli",
+      "Mustafa Fadel",
+      "Hawraa Sabti"
+    ],
+    "date": "2026-08-10",
+    "display_date": "10 August 2026",
+    "year": 2026,
+    "journal": "Membranes",
+    "publisher": "MDPI",
+    "volume": "16",
+    "issue": "8",
+    "pages": "265",
+    "doi": "10.3390/membranes16080265",
+    "prepublication_doi": "",
+    "official_url": "https://www.mdpi.com/2077-0375/16/8/265",
+    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "pillar": "Membrane-module hydrodynamics and CFD",
+    "summary": "This CFD study compares grid, hexagonal and sinusoidal RO feed spacers in ANSYS Fluent. It examines concentration polarization, wall shear and hydraulic losses. The hexagonal design offers the strongest modeled mass-transfer versus pressure-loss balance; advanced geometries still require experimental validation.",
+    "plain": "Changing the spacer shape changes how saline water mixes next to the membrane. Computer simulations help compare designs before physical testing.",
+    "why": "The work provides comparative numerical guidance for RO spacer design, with conclusions limited to the simulated channel conditions.",
+    "keywords": [
+      "reverse osmosis",
+      "feed spacer",
+      "computational fluid dynamics",
+      "concentration polarization",
+      "hexagonal spacer",
+      "sinusoidal spacer",
+      "wall shear stress",
+      "pressure drop"
+    ],
+    "topics": [
+      "reverse osmosis",
+      "feed spacer",
+      "computational fluid dynamics",
+      "concentration polarization",
+      "hexagonal spacer"
+    ],
+    "search_phrases": [
+      "reverse osmosis",
+      "feed spacer",
+      "computational fluid dynamics",
+      "concentration polarization",
+      "hexagonal spacer"
+    ],
+    "issn": "2077-0375"
+  },
+  {
+    "order": 13,
+    "type": "Journal article",
+    "status": "Published",
+    "title": "An Offline Digital-Twin-Assisted Decision-Support Framework for Dynamic RO Under Kuwait Solar-Availability Conditions",
+    "slug": "offline-digital-twin-dynamic-ro-kuwait-solar",
+    "authors": [
+      "Fajer M. Alelaj",
+      "Mohammed A. Bou-Rabee",
+      "Mustafa Fadel",
+      "Shafqat Aziz",
+      "Adil Aslam Mir",
+      "Abdulrahman Alharbi",
+      "Hussain Al-Sairfi"
+    ],
+    "date": "2026-08-23",
+    "display_date": "23 August 2026",
+    "year": 2026,
+    "journal": "Membranes",
+    "publisher": "MDPI",
+    "volume": "16",
+    "issue": "9",
+    "pages": "281",
+    "doi": "10.3390/membranes16090281",
+    "prepublication_doi": "",
+    "official_url": "https://www.mdpi.com/2077-0375/16/9/281",
+    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "pillar": "AI-enabled renewable energy and water-energy systems",
+    "summary": "This offline framework combines dynamic RO experimental data from NREL with Kuwait solar context from NASA POWER. Machine-learning models predict permeate flow and estimate specific energy consumption, while an operating-point ranking layer supports decisions. It is an offline process-analysis tool; conductivity prediction remains limited.",
+    "plain": "A virtual analysis tool compares RO operating conditions using experimental process records and solar availability in Kuwait.",
+    "why": "The study connects predictive modeling with renewable desalination decisions while distinguishing offline analysis from live plant control.",
+    "keywords": [
+      "offline digital twin",
+      "dynamic pressure operation",
+      "permeate flow rate",
+      "Kuwait",
+      "machine learning",
+      "photovoltaic desalination",
+      "reverse osmosis",
+      "specific energy consumption"
+    ],
+    "topics": [
+      "offline digital twin",
+      "dynamic pressure operation",
+      "permeate flow rate",
+      "Kuwait",
+      "machine learning"
+    ],
+    "search_phrases": [
+      "offline digital twin",
+      "dynamic pressure operation",
+      "permeate flow rate",
+      "Kuwait",
+      "machine learning"
+    ],
+    "issn": "2077-0375"
   }
 ]
