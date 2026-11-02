@@ -1,0 +1,40 @@
+name: Finalize verified HTFF 110 publication update
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/finish-htff26-110.yml']
+permissions:
+  contents: write
+jobs:
+  finalize:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - name: Generate and validate publication files
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import textwrap
+          workflow = Path('.github/workflows/add-htff26-110.yml').read_text(encoding='utf-8')
+          source = workflow.split("          python3 - <<'PY'\n", 1)[1].split('          PY\n', 1)[0]
+          source = textwrap.dedent(source)
+          assert '10.11159/htff26.110' in source
+          exec(compile(source, '<verified-htff26-110-update>', 'exec'), {})
+          ris = Path('publications/droplet-dynamics-buoyancy-thermocapillary-forces-mcm2026/citation.ris')
+          content = ris.read_text(encoding='utf-8')
+          ris.write_text('\n'.join(line.rstrip() for line in content.splitlines()) + '\n', encoding='utf-8')
+          assert ris.read_text(encoding='utf-8').endswith('ER  -\n')
+          PY
+      - name: Commit verified update without changing unrelated files
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          while IFS= read -r path; do git add -- "$path"; done < /tmp/htff26-110-files.txt
+          git diff --cached --check
+          git diff --cached --stat
+          git commit -m "Add MCM 2026 HTFF 110 extended abstract, citation exports and synchronized discovery metadata"
+          git push origin HEAD:main
