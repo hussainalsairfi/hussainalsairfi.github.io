@@ -1,0 +1,266 @@
+name: Add verified HTFF 110 conference abstract
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/add-htff26-110.yml']
+permissions:
+  contents: write
+concurrency:
+  group: add-htff26-110
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Add publication and validate all affected indexes
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import csv, html, io, json, re, textwrap
+          from pathlib import Path
+          from datetime import datetime, timezone
+          from xml.etree import ElementTree as ET
+          base = 'https://hussainalsairfi.github.io/'
+          slug = 'droplet-dynamics-buoyancy-thermocapillary-forces-mcm2026'
+          folder = 'publications/' + slug + '/'
+          url = base + folder
+          title = 'Droplet Dynamics in Small-Scale Containers: The Impact of Buoyancy and Thermocapillary Forces'
+          authors = ['Yousuf Alhendal', 'Mohammad K. Alhamli', 'Hussain Al-Sairfi']
+          doi = '10.11159/htff26.110'
+          pdf = 'https://www.avestia.com/MCM2026_Proceedings/files/paper/HTFF/HTFF_110.pdf'
+          book = 'Proceedings of the 12th World Congress on Mechanical, Chemical, and Material Engineering (MCM 2026)'
+          kind = 'Extended conference abstract'
+          today = '2026-11-02'
+          now = datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
+          related_slug = 'thermocapillary-droplet-flow-small-scale-containers-gravity'
+          related_url = base + 'publications/' + related_slug + '/'
+          topic = 'research-topics/thermofluids-cfd-materials/index.html'
+          summary = ('A numerical study of an FC-75 droplet in silicone oil examines how container size changes the competition between thermocapillary and buoyancy forces. The extended abstract reports Volume-of-Fluid simulations in a differentially heated cylindrical container, with thermocapillary-dominated motion in smaller configurations and stronger buoyancy influence as the container becomes larger.')
+          plain = 'Heating and gravity can move a droplet in opposite directions. This conference contribution uses computer simulations to examine how that balance changes with container size.'
+          keywords = ['droplet dynamics', 'thermocapillary flow', 'Marangoni effect', 'buoyancy', 'Volume of Fluid', 'FC-75', 'silicone oil', 'cylindrical confinement']
+          pending = {}
+          def read(path):
+              return Path(path).read_text(encoding='utf-8')
+          def put(path, value):
+              assert isinstance(value, str), path
+              pending[path] = value
+          def append_array(path, item):
+              raw = read(path)
+              old = json.loads(raw)
+              assert isinstance(old, list), path
+              assert doi not in json.dumps(old), 'Publication already exists: ' + path
+              stripped = raw.rstrip()
+              assert stripped.endswith(']'), path
+              result = stripped[:-1].rstrip() + (',' if old else '') + '\n' + textwrap.indent(json.dumps(item, ensure_ascii=False, indent=2), '  ') + '\n]\n'
+              parsed = json.loads(result)
+              assert parsed[:-1] == old and parsed[-1] == item, path
+              put(path, result)
+              return old
+          current = json.loads(read('metadata/publications.json'))
+          assert not any(p.get('doi', '').lower() == doi for p in current), 'Refusing duplicate DOI'
+          record = {
+              'order': max(p.get('order', 0) for p in current) + 1,
+              'type': kind, 'status': 'Published', 'title': title, 'slug': slug,
+              'authors': authors, 'date': '2026', 'display_date': '2026; conference held 18–20 August 2026',
+              'year': 2026, 'journal': book, 'publisher': '', 'volume': '', 'issue': '', 'pages': '',
+              'doi': doi, 'prepublication_doi': '', 'official_url': pdf,
+              'license': 'Publisher terms apply; official PDF linked, not redistributed',
+              'pillar': 'Thermofluids, CFD and microgravity', 'summary': summary, 'plain': plain,
+              'why': 'Provides conference-level numerical context for scale-dependent droplet transport; this is a one-page extended abstract, not a full journal article.',
+              'keywords': keywords,
+              'topics': ['Thermocapillary–buoyancy competition', 'Confined droplet migration', 'Volume-of-Fluid simulation'],
+              'search_phrases': [], 'issn': '', 'paper_number': 'HTFF 110', 'number_of_pages': 1,
+              'conference_start': '2026-08-18', 'conference_end': '2026-08-20',
+              'conference_location': 'London, United Kingdom',
+              'metadata_note': 'Title, author order, DOI, output type and event dates checked against the official proceedings PDF. The conference dates are not asserted to be an independently verified publication date.',
+              'source_verified': today
+          }
+          author_schema = [{'@type': 'Person', 'name': a, **({'sameAs': 'https://orcid.org/0009-0002-5914-0510'} if a == 'Hussain Al-Sairfi' else {})} for a in authors]
+          work = {
+              '@type': 'ScholarlyArticle', '@id': url + '#work', 'url': url,
+              'mainEntityOfPage': url, 'name': title, 'headline': title, 'author': author_schema,
+              'genre': kind, 'creativeWorkStatus': 'Published', 'inLanguage': 'en',
+              'description': summary, 'keywords': keywords, 'dateModified': today,
+              'identifier': [{'@type': 'PropertyValue', 'propertyID': 'DOI', 'value': doi}, {'@type': 'PropertyValue', 'propertyID': 'Conference paper number', 'value': 'HTFF 110'}],
+              'sameAs': ['https://doi.org/' + doi],
+              'isPartOf': {'@type': 'CreativeWork', 'name': book, 'about': {'@type': 'Event', 'name': '12th World Congress on Mechanical, Chemical, and Material Engineering (MCM 2026)', 'startDate': '2026-08-18', 'endDate': '2026-08-20', 'location': {'@type': 'Place', 'name': 'London, United Kingdom'}}},
+              'encoding': {'@type': 'MediaObject', 'encodingFormat': 'application/pdf', 'contentUrl': pdf}
+          }
+          graph = {'@context': 'https://schema.org', '@graph': [work, {'@type': 'WebPage', '@id': url + '#webpage', 'url': url, 'name': title, 'dateModified': today, 'mainEntity': {'@id': url + '#work'}, 'isPartOf': {'@id': base + '#website'}}]}
+          bib = ('@inproceedings{Alhendal2026HTFF110,\n'
+                 '  author = {Alhendal, Yousuf and Alhamli, Mohammad K. and Al-Sairfi, Hussain},\n'
+                 '  title = {' + title + '},\n'
+                 '  booktitle = {' + book + '},\n'
+                 '  year = {2026},\n'
+                 '  address = {London, United Kingdom},\n'
+                 '  doi = {' + doi + '},\n'
+                 '  url = {' + pdf + '},\n'
+                 '  note = {Extended conference abstract, one page, Paper HTFF 110. Conference held 18--20 August 2026.}\n}\n')
+          ris = ('TY  - CPAPER\nAU  - Alhendal, Yousuf\nAU  - Alhamli, Mohammad K.\nAU  - Al-Sairfi, Hussain\nTI  - ' + title + '\nT2  - ' + book + '\nPY  - 2026\nDO  - ' + doi + '\nUR  - ' + pdf + '\nM3  - Extended conference abstract\nN1  - One-page extended conference abstract, Paper HTFF 110. Conference held 18-20 August 2026 in London, United Kingdom. Exact publication day not independently verified.\nER  - \n')
+          e = html.escape
+          citation = '; '.join(authors) + '. ' + title + '. ' + book + ', 2026. Paper HTFF 110. Extended conference abstract (one page).'
+          meta_authors = '\n'.join('<meta name="citation_author" content="' + e(a, quote=True) + '">' for a in authors)
+          page = f'''<!doctype html><html lang="en"><head>
+          <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+          <title>{e(title)} | Hussain Al-Sairfi Research</title>
+          <meta name="description" content="{e(summary, quote=True)}">
+          <meta name="robots" content="index, follow, max-image-preview:large">
+          <link rel="canonical" href="{url}"><link rel="stylesheet" href="../../style.css">
+          <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+          <link rel="sitemap" type="application/xml" href="../../sitemap.xml">
+          <meta property="og:type" content="article"><meta property="og:title" content="{e(title, quote=True)}">
+          <meta property="og:description" content="{e(summary, quote=True)}"><meta property="og:url" content="{url}">
+          <meta property="og:image" content="{base}assets/research-profile-card.png">
+          <meta name="twitter:card" content="summary_large_image">
+          <meta name="citation_title" content="{e(title, quote=True)}">
+          {meta_authors}
+          <meta name="citation_publication_date" content="2026">
+          <meta name="citation_conference_title" content="{e(book, quote=True)}">
+          <meta name="citation_doi" content="{doi}"><meta name="citation_language" content="en">
+          <meta name="citation_keywords" content="{e('; '.join(keywords), quote=True)}">
+          <link rel="alternate" type="application/x-bibtex" href="citation.bib" title="BibTeX citation">
+          <link rel="alternate" type="application/x-research-info-systems" href="citation.ris" title="RIS citation">
+          <script type="application/ld+json">{json.dumps(graph, ensure_ascii=False, indent=2)}</script>
+          </head><body>
+          <nav class="site-nav" aria-label="Primary navigation"><a class="brand" href="../../">Hussain Al-Sairfi Research</a><div class="nav-links"><a href="../../publications/">Publications</a><a href="../../research-topics/">Research topics</a><a href="https://hussainalsairfi.bio">Official website ↗</a></div></nav>
+          <header class="detail-header"><div class="inner"><p class="breadcrumb"><a href="../../">Research profile</a> / <a href="../">Publications</a> / Extended conference abstract</p><p class="eyebrow">Thermofluids, CFD and microgravity</p><h1>{e(title)}</h1><p class="meta">{e('; '.join(authors))} · MCM 2026 · Paper HTFF 110</p></div></header>
+          <main><div class="detail-grid"><div>
+          <section class="card featured"><h2>Research summary</h2><p>{e(summary)}</p><p class="small">This is a site summary, not a reproduction of the published extended abstract.</p></section>
+          <section><h2>Plain-language explanation</h2><p>{e(plain)}</p><div class="callout"><strong>Output type:</strong> One-page extended conference abstract. It is not a full journal article.</div></section>
+          <section><h2>Official full text and citation files</h2><p><a class="button outline" href="{pdf}">Read the official proceedings PDF ↗</a></p><p><a href="https://doi.org/{doi}">DOI: {doi}</a> · <a href="citation.bib" download>Download BibTeX</a> · <a href="citation.ris" download>Download RIS</a></p><p>The publisher-hosted PDF is linked rather than copied to this website.</p></section>
+          <section><h2>Recommended citation</h2><p>{e(citation)} DOI: <a href="https://doi.org/{doi}">{doi}</a>.</p></section>
+          <section><h2>Related research</h2><p><a href="../{related_slug}/">Thermocapillary Droplet Flow in Small-scale Containers: the Effect of Gravity</a></p><p>A related journal article on the same research theme; it is a separate publication record with its own DOI.</p><p><a href="../../research-topics/thermofluids-cfd-materials/">Browse Thermofluids, CFD, Microgravity and Advanced Materials</a></p></section>
+          </div><aside><section class="card"><h2>Verified metadata</h2><dl class="fact-list">
+          <div><dt>Output type</dt><dd>{kind}</dd></div><div><dt>Authors</dt><dd>{e('; '.join(authors))}</dd></div>
+          <div><dt>Source</dt><dd>{e(book)}</dd></div><div><dt>Year</dt><dd>2026</dd></div>
+          <div><dt>Conference dates</dt><dd>18–20 August 2026</dd></div><div><dt>Location</dt><dd>London, United Kingdom</dd></div>
+          <div><dt>Paper number</dt><dd>HTFF 110</dd></div><div><dt>Extent</dt><dd>One page</dd></div><div><dt>DOI</dt><dd>{doi}</dd></div>
+          </dl><p class="small">Event dates are taken from the proceedings. An exact publication day is not independently asserted.</p></section>
+          <section class="card"><h2>Researcher identity</h2><p><a href="https://orcid.org/0009-0002-5914-0510">Hussain Al-Sairfi · ORCID</a></p><p><a href="https://hussainalsairfi.bio">Official academic website</a></p></section></aside></div></main>
+          <footer class="site-footer"><p><strong>Hussain Al-Sairfi, PhD</strong> · Water Research Center, KISR</p><p><a href="../../publications/">Publications</a> · <a href="../../llms.txt">llms.txt</a> · <a href="../../sitemap.xml">Sitemap</a></p><p class="small">This record checked against the official proceedings on 2 November 2026.</p></footer></body></html>
+          '''
+          put(folder + 'index.html', page)
+          put(folder + 'citation.bib', bib)
+          put(folder + 'citation.ris', ris)
+          append_array('metadata/publications.json', record)
+          append_array('metadata/publications_schema.jsonld', graph)
+          raw_csv = read('metadata/publications.csv')
+          csv_rows = list(csv.DictReader(io.StringIO(raw_csv.lstrip('\ufeff'))))
+          assert all(row.get('doi', '').lower() != doi for row in csv_rows)
+          fieldnames = next(csv.reader(io.StringIO(raw_csv.lstrip('\ufeff'))))
+          row = {key: record.get(key, '') for key in fieldnames}
+          for key, value in list(row.items()):
+              if isinstance(value, list): row[key] = '; '.join(value)
+          buffer = io.StringIO()
+          csv.DictWriter(buffer, fieldnames=fieldnames, lineterminator='\n').writerow(row)
+          put('metadata/publications.csv', raw_csv.rstrip('\n') + '\n' + buffer.getvalue())
+          def update_schema(text, add_item=False):
+              additions = 0
+              def visit(value):
+                  nonlocal additions
+                  if isinstance(value, dict):
+                      if 'dateModified' in value: value['dateModified'] = today
+                      if add_item and value.get('@type') == 'ItemList':
+                          elements = value.get('itemListElement', [])
+                          if any('/publications/' in json.dumps(x) for x in elements):
+                              assert url not in json.dumps(elements), 'Duplicate page link'
+                              elements.append({'@type': 'ListItem', 'position': len(elements) + 1, 'name': title, 'url': url})
+                              value['numberOfItems'] = len(elements)
+                              additions += 1
+                      for child in value.values(): visit(child)
+                  elif isinstance(value, list):
+                      for child in value: visit(child)
+              def replace(match):
+                  data = json.loads(match.group(2))
+                  visit(data)
+                  return match.group(1) + json.dumps(data, ensure_ascii=False, indent=2) + match.group(3)
+              result = re.sub(r'(<script\s+type="application/ld\+json">)(.*?)(</script>)', replace, text, flags=re.S)
+              if add_item: assert additions >= 1, 'Expected publication ItemList not found'
+              return result
+          card = f'<article class="publication-card"><div><p class="kicker">Thermofluids, CFD and microgravity · Extended conference abstract</p><h3><a href="{url}">{e(title)}</a></h3><p class="meta">{e("; ".join(authors))} · MCM 2026 · Paper HTFF 110 · DOI: {doi}</p><p>{e(summary)}</p></div><span class="status published">Conference abstract</span></article>\n'
+          for path in ['index.html', 'publications/index.html', topic]:
+              text = read(path)
+              assert slug not in text, path
+              marker = '<article class="publication-card">'
+              assert marker in text, path
+              text = text.replace(marker, card + marker, 1)
+              text = text.replace('Index of journal articles, book chapter and doctoral thesis', 'Index of journal articles, a conference extended abstract, book chapter and doctoral thesis')
+              text = text.replace('Journal articles, an open-access book chapter, a forthcoming article and a doctoral thesis.', 'Journal articles, a conference extended abstract, an open-access book chapter, a forthcoming article and a doctoral thesis.')
+              text = text.replace('Topic page last updated: 2 July 2026.', 'Topic page last updated: 2 November 2026.')
+              text = text.replace('Metadata last verified and site updated: 25 June 2026.', 'Page updated: 2 November 2026. New conference record verified; older publication metadata has not been re-audited.')
+              put(path, update_schema(text, add_item=True))
+          related_path = 'publications/' + related_slug + '/index.html'
+          text = read(related_path)
+          marker = '<section><h2>Related research on this site</h2><ul>'
+          assert marker in text, 'Related-research insertion point missing'
+          text = text.replace(marker, marker + f'<li><a href="../{slug}/">{e(title)}</a> — MCM 2026 extended conference abstract; a separate publication record.</li>', 1)
+          text = text.replace('Metadata last verified and site updated: 25 June 2026.', 'Related-research links updated: 2 November 2026. Journal metadata has not been re-audited in this update.')
+          put(related_path, update_schema(text))
+          llms = read('llms.txt')
+          assert doi not in llms
+          put('llms.txt', llms.rstrip() + '\n\n## Conference extended abstract added 2 November 2026\n\n- Title: ' + title + '\n- Authors: ' + '; '.join(authors) + '\n- Type: Extended conference abstract, one page; not a full journal article.\n- Year: 2026. Conference: MCM 2026, London, United Kingdom, 18–20 August 2026.\n- Paper number: HTFF 110.\n- DOI: ' + doi + '\n- Canonical research page: ' + url + '\n- Official proceedings PDF: ' + pdf + '\n- BibTeX: ' + url + 'citation.bib\n- RIS: ' + url + 'citation.ris\n- Related journal article: ' + related_url + '\n- Exact publication day is not independently asserted; event dates are not used as a publication date.\n')
+          sitemap = read('sitemap.xml')
+          ET.fromstring(sitemap)
+          assert url not in sitemap
+          changed_urls = {base, base + 'publications/', base + 'research-topics/thermofluids-cfd-materials/', related_url}
+          def update_url_block(match):
+              block = match.group(0)
+              loc = re.search(r'<loc>(.*?)</loc>', block)
+              if loc and loc.group(1) in changed_urls:
+                  if '<lastmod>' in block:
+                      block = re.sub(r'<lastmod>.*?</lastmod>', '<lastmod>' + today + '</lastmod>', block)
+                  else:
+                      block = block.replace('</url>', '<lastmod>' + today + '</lastmod></url>')
+              return block
+          sitemap = re.sub(r'<url>.*?</url>', update_url_block, sitemap, flags=re.S)
+          assert '</urlset>' in sitemap
+          sitemap = sitemap.replace('</urlset>', '  <url><loc>' + url + '</loc><lastmod>' + today + '</lastmod></url>\n</urlset>')
+          put('sitemap.xml', sitemap)
+          feed = read('feed.xml')
+          ET.fromstring(feed)
+          assert url not in feed
+          assert '</feed>' in feed and '<updated>' in feed
+          feed = re.sub(r'<updated>.*?</updated>', '<updated>' + now + '</updated>', feed, count=1)
+          entry = ('  <entry>\n    <id>' + url + '</id>\n    <title>' + e(title) + '</title>\n    <link href="' + url + '"/>\n    <updated>' + now + '</updated>\n    <summary>' + e('Added to the research hub: ' + kind + ', MCM 2026, Paper HTFF 110. ' + summary) + '</summary>\n  </entry>\n')
+          put('feed.xml', feed.replace('</feed>', entry + '</feed>'))
+          put('platform_copy/' + slug + '.txt', 'CANONICAL CONFERENCE RECORD\n\n' + citation + '\nDOI: ' + doi + '\nOfficial PDF: ' + pdf + '\nResearch page: ' + url + '\n\nORCID: import citation.bib, check author order and classify as conference abstract (or the closest conference-output type offered). Use year 2026; do not invent an exact publication day.\n\nResearchGate: update the existing DOI record to the exact title above. Do not create a second record. Record conference dates separately from publication date.\n\nKudos summary draft:\n' + plain + '\nScope: numerical study presented as a one-page extended abstract, not a full journal article.\n\nNo external scholarly profile has been edited by this repository update. Duplicate preprints should be compared for DOI/version/history before any manual merge or removal.\n')
+          put('metadata/htff26-110-source-notes.md', '# HTFF 110 source verification\n\nChecked on 2 November 2026 against the official one-page proceedings PDF:\n' + pdf + '\n\nThe PDF supplies the exact title, three authors in order, DOI 10.11159/htff26.110, the label Extended Abstract, paper number HTFF 110, and conference dates 18–20 August 2026 in London, United Kingdom.\n\nThe ResearchGate title variant is not used as the canonical title. No precise publication day, journal status, peer-review claim or reuse licence is inferred. The official PDF is linked, not redistributed. Existing journal records remain separate.\n')
+          # Validate before touching any tracked file.
+          for path, content in pending.items():
+              if path.endswith(('.json', '.jsonld')): json.loads(content)
+              if path.endswith('.xml'): ET.fromstring(content)
+              if path.endswith('.html'):
+                  assert '</html>' in content and '<h1>' in content, path
+                  for payload in re.findall(r'<script\s+type="application/ld\+json">(.*?)</script>', content, re.S): json.loads(payload)
+          updated_records = json.loads(pending['metadata/publications.json'])
+          updated_csv = list(csv.DictReader(io.StringIO(pending['metadata/publications.csv'].lstrip('\ufeff'))))
+          assert len(updated_records) == len(current) + 1
+          assert len(updated_csv) == len(csv_rows) + 1
+          assert updated_records[:-1] == current
+          assert updated_csv[:-1] == csv_rows
+          assert updated_records[-1]['authors'] == authors
+          assert updated_records[-1]['type'] == kind
+          assert page.count('name="citation_author"') == 3
+          assert 'citation_journal_title' not in page
+          assert 'citation_pdf_url' not in page
+          for path, content in pending.items():
+              target = Path(path)
+              target.parent.mkdir(parents=True, exist_ok=True)
+              target.write_text(content, encoding='utf-8')
+          Path('/tmp/htff26-110-files.txt').write_text('\n'.join(pending) + '\n', encoding='utf-8')
+          print('Validated publication counts: JSON', len(updated_records), 'CSV', len(updated_csv))
+          print('Changed files:\n' + '\n'.join(pending))
+          PY
+      - name: Commit the validated publication update
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          while IFS= read -r path; do git add -- "$path"; done < /tmp/htff26-110-files.txt
+          git diff --cached --check
+          git diff --cached --stat
+          git commit -m "Add verified MCM 2026 HTFF 110 extended abstract and synchronize discovery metadata"
+          git push origin HEAD:main
