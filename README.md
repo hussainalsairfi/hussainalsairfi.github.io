@@ -12,12 +12,13 @@ Static GitHub Pages site prepared for **https://hussainalsairfi.github.io**.
 
 ## What is included
 - One profile homepage and a publication index.
-- Dedicated machine-readable pages for 13 current research outputs, including the doctoral thesis.
+- Dedicated machine-readable pages for 14 current research outputs, including the doctoral thesis and a clearly labeled conference extended abstract.
 - Google Scholar / Highwire citation meta tags.
 - Schema.org JSON-LD for the researcher and every research output.
 - Open Graph cards, sitemap, Atom feed, robots.txt, llms.txt, JSON-LD and CSV metadata.
 - Maximum-crawl `robots.txt`, plus a search-only alternative.
 - Original ionic-strength infographic; no third-party journal logos or copied figures.
+- BibTeX and RIS exports for the MCM 2026 HTFF 110 extended conference abstract.
 
 ## Future papers
 Do **not** delete or rebuild the existing site. After a new paper is officially accepted online or published, add one new folder under `publications/`, add its card to `index.html` and `publications/index.html`, and update `sitemap.xml`, `llms.txt`, `feed.xml` and metadata. The included `metadata/publication_template.json` shows the required fields. Sending the DOI or final PDF is sufficient for a future update.
