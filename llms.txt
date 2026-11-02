@@ -48,3 +48,18 @@ Use the dedicated publication pages for bibliographic metadata, keywords, sugges
 - Membrane Distillation for Seawater and Oilfield-Produced Water: https://hussainalsairfi.github.io/research-topics/membrane-distillation-produced-water/
 - AI, Renewable Energy and Water-Energy Systems: https://hussainalsairfi.github.io/research-topics/ai-renewable-water-energy-systems/
 - Thermofluids, CFD, Microgravity and Advanced Materials: https://hussainalsairfi.github.io/research-topics/thermofluids-cfd-materials/
+
+## Conference extended abstract added 2 November 2026
+
+- Title: Droplet Dynamics in Small-Scale Containers: The Impact of Buoyancy and Thermocapillary Forces
+- Authors: Yousuf Alhendal; Mohammad K. Alhamli; Hussain Al-Sairfi
+- Type: Extended conference abstract, one page; not a full journal article.
+- Year: 2026. Conference: MCM 2026, London, United Kingdom, 18–20 August 2026.
+- Paper number: HTFF 110.
+- DOI: 10.11159/htff26.110
+- Canonical research page: https://hussainalsairfi.github.io/publications/droplet-dynamics-buoyancy-thermocapillary-forces-mcm2026/
+- Official proceedings PDF: https://www.avestia.com/MCM2026_Proceedings/files/paper/HTFF/HTFF_110.pdf
+- BibTeX: https://hussainalsairfi.github.io/publications/droplet-dynamics-buoyancy-thermocapillary-forces-mcm2026/citation.bib
+- RIS: https://hussainalsairfi.github.io/publications/droplet-dynamics-buoyancy-thermocapillary-forces-mcm2026/citation.ris
+- Related journal article: https://hussainalsairfi.github.io/publications/thermocapillary-droplet-flow-small-scale-containers-gravity/
+- Exact publication day is not independently asserted; event dates are not used as a publication date.

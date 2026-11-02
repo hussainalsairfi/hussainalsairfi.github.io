@@ -717,5 +717,57 @@
       "machine learning"
     ],
     "issn": "2077-0375"
+  },
+  {
+    "order": 14,
+    "type": "Extended conference abstract",
+    "status": "Published",
+    "title": "Droplet Dynamics in Small-Scale Containers: The Impact of Buoyancy and Thermocapillary Forces",
+    "slug": "droplet-dynamics-buoyancy-thermocapillary-forces-mcm2026",
+    "authors": [
+      "Yousuf Alhendal",
+      "Mohammad K. Alhamli",
+      "Hussain Al-Sairfi"
+    ],
+    "date": "2026",
+    "display_date": "2026; conference held 18–20 August 2026",
+    "year": 2026,
+    "journal": "Proceedings of the 12th World Congress on Mechanical, Chemical, and Material Engineering (MCM 2026)",
+    "publisher": "",
+    "volume": "",
+    "issue": "",
+    "pages": "",
+    "doi": "10.11159/htff26.110",
+    "prepublication_doi": "",
+    "official_url": "https://www.avestia.com/MCM2026_Proceedings/files/paper/HTFF/HTFF_110.pdf",
+    "license": "Publisher terms apply; official PDF linked, not redistributed",
+    "pillar": "Thermofluids, CFD and microgravity",
+    "summary": "A numerical study of an FC-75 droplet in silicone oil examines how container size changes the competition between thermocapillary and buoyancy forces. The extended abstract reports Volume-of-Fluid simulations in a differentially heated cylindrical container, with thermocapillary-dominated motion in smaller configurations and stronger buoyancy influence as the container becomes larger.",
+    "plain": "Heating and gravity can move a droplet in opposite directions. This conference contribution uses computer simulations to examine how that balance changes with container size.",
+    "why": "Provides conference-level numerical context for scale-dependent droplet transport; this is a one-page extended abstract, not a full journal article.",
+    "keywords": [
+      "droplet dynamics",
+      "thermocapillary flow",
+      "Marangoni effect",
+      "buoyancy",
+      "Volume of Fluid",
+      "FC-75",
+      "silicone oil",
+      "cylindrical confinement"
+    ],
+    "topics": [
+      "Thermocapillary–buoyancy competition",
+      "Confined droplet migration",
+      "Volume-of-Fluid simulation"
+    ],
+    "search_phrases": [],
+    "issn": "",
+    "paper_number": "HTFF 110",
+    "number_of_pages": 1,
+    "conference_start": "2026-08-18",
+    "conference_end": "2026-08-20",
+    "conference_location": "London, United Kingdom",
+    "metadata_note": "Title, author order, DOI, output type and event dates checked against the official proceedings PDF. The conference dates are not asserted to be an independently verified publication date.",
+    "source_verified": "2026-11-02"
   }
 ]

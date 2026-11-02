@@ -1523,5 +1523,95 @@
         ]
       }
     ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ScholarlyArticle",
+        "@id": "https://hussainalsairfi.github.io/publications/droplet-dynamics-buoyancy-thermocapillary-forces-mcm2026/#work",
+        "url": "https://hussainalsairfi.github.io/publications/droplet-dynamics-buoyancy-thermocapillary-forces-mcm2026/",
+        "mainEntityOfPage": "https://hussainalsairfi.github.io/publications/droplet-dynamics-buoyancy-thermocapillary-forces-mcm2026/",
+        "name": "Droplet Dynamics in Small-Scale Containers: The Impact of Buoyancy and Thermocapillary Forces",
+        "headline": "Droplet Dynamics in Small-Scale Containers: The Impact of Buoyancy and Thermocapillary Forces",
+        "author": [
+          {
+            "@type": "Person",
+            "name": "Yousuf Alhendal"
+          },
+          {
+            "@type": "Person",
+            "name": "Mohammad K. Alhamli"
+          },
+          {
+            "@type": "Person",
+            "name": "Hussain Al-Sairfi",
+            "sameAs": "https://orcid.org/0009-0002-5914-0510"
+          }
+        ],
+        "genre": "Extended conference abstract",
+        "creativeWorkStatus": "Published",
+        "inLanguage": "en",
+        "description": "A numerical study of an FC-75 droplet in silicone oil examines how container size changes the competition between thermocapillary and buoyancy forces. The extended abstract reports Volume-of-Fluid simulations in a differentially heated cylindrical container, with thermocapillary-dominated motion in smaller configurations and stronger buoyancy influence as the container becomes larger.",
+        "keywords": [
+          "droplet dynamics",
+          "thermocapillary flow",
+          "Marangoni effect",
+          "buoyancy",
+          "Volume of Fluid",
+          "FC-75",
+          "silicone oil",
+          "cylindrical confinement"
+        ],
+        "dateModified": "2026-11-02",
+        "identifier": [
+          {
+            "@type": "PropertyValue",
+            "propertyID": "DOI",
+            "value": "10.11159/htff26.110"
+          },
+          {
+            "@type": "PropertyValue",
+            "propertyID": "Conference paper number",
+            "value": "HTFF 110"
+          }
+        ],
+        "sameAs": [
+          "https://doi.org/10.11159/htff26.110"
+        ],
+        "isPartOf": {
+          "@type": "CreativeWork",
+          "name": "Proceedings of the 12th World Congress on Mechanical, Chemical, and Material Engineering (MCM 2026)",
+          "about": {
+            "@type": "Event",
+            "name": "12th World Congress on Mechanical, Chemical, and Material Engineering (MCM 2026)",
+            "startDate": "2026-08-18",
+            "endDate": "2026-08-20",
+            "location": {
+              "@type": "Place",
+              "name": "London, United Kingdom"
+            }
+          }
+        },
+        "encoding": {
+          "@type": "MediaObject",
+          "encodingFormat": "application/pdf",
+          "contentUrl": "https://www.avestia.com/MCM2026_Proceedings/files/paper/HTFF/HTFF_110.pdf"
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://hussainalsairfi.github.io/publications/droplet-dynamics-buoyancy-thermocapillary-forces-mcm2026/#webpage",
+        "url": "https://hussainalsairfi.github.io/publications/droplet-dynamics-buoyancy-thermocapillary-forces-mcm2026/",
+        "name": "Droplet Dynamics in Small-Scale Containers: The Impact of Buoyancy and Thermocapillary Forces",
+        "dateModified": "2026-11-02",
+        "mainEntity": {
+          "@id": "https://hussainalsairfi.github.io/publications/droplet-dynamics-buoyancy-thermocapillary-forces-mcm2026/#work"
+        },
+        "isPartOf": {
+          "@id": "https://hussainalsairfi.github.io/#website"
+        }
+      }
+    ]
   }
 ]

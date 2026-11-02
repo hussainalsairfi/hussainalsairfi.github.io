@@ -1,0 +1,16 @@
+CANONICAL CONFERENCE RECORD
+
+Yousuf Alhendal; Mohammad K. Alhamli; Hussain Al-Sairfi. Droplet Dynamics in Small-Scale Containers: The Impact of Buoyancy and Thermocapillary Forces. Proceedings of the 12th World Congress on Mechanical, Chemical, and Material Engineering (MCM 2026), 2026. Paper HTFF 110. Extended conference abstract (one page).
+DOI: 10.11159/htff26.110
+Official PDF: https://www.avestia.com/MCM2026_Proceedings/files/paper/HTFF/HTFF_110.pdf
+Research page: https://hussainalsairfi.github.io/publications/droplet-dynamics-buoyancy-thermocapillary-forces-mcm2026/
+
+ORCID: import citation.bib, check author order and classify as conference abstract (or the closest conference-output type offered). Use year 2026; do not invent an exact publication day.
+
+ResearchGate: update the existing DOI record to the exact title above. Do not create a second record. Record conference dates separately from publication date.
+
+Kudos summary draft:
+Heating and gravity can move a droplet in opposite directions. This conference contribution uses computer simulations to examine how that balance changes with container size.
+Scope: numerical study presented as a one-page extended abstract, not a full journal article.
+
+No external scholarly profile has been edited by this repository update. Duplicate preprints should be compared for DOI/version/history before any manual merge or removal.

@@ -2,10 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://hussainalsairfi.github.io/</loc>
-  </url>
+  <lastmod>2026-11-02</lastmod></url>
   <url>
     <loc>https://hussainalsairfi.github.io/publications/</loc>
-  </url>
+  <lastmod>2026-11-02</lastmod></url>
   <url>
     <loc>https://hussainalsairfi.github.io/publications/ionic-strength-mineral-solubility-kuwait-brines/</loc>
   </url>
@@ -32,7 +32,7 @@
   </url>
   <url>
     <loc>https://hussainalsairfi.github.io/publications/thermocapillary-droplet-flow-small-scale-containers-gravity/</loc>
-  </url>
+  <lastmod>2026-11-02</lastmod></url>
   <url>
     <loc>https://hussainalsairfi.github.io/publications/alcrcu-feni-high-entropy-alloy-rapid-solidification/</loc>
   </url>
@@ -53,5 +53,6 @@
   </url>
   <url>
     <loc>https://hussainalsairfi.github.io/research-topics/thermofluids-cfd-materials/</loc>
-  </url>
-<url><loc>https://hussainalsairfi.github.io/publications/ro-feed-spacer-geometries-comparative-numerical-evaluation/</loc><lastmod>2026-10-08</lastmod></url><url><loc>https://hussainalsairfi.github.io/publications/offline-digital-twin-dynamic-ro-kuwait-solar/</loc><lastmod>2026-10-08</lastmod></url></urlset>
+  <lastmod>2026-11-02</lastmod></url>
+<url><loc>https://hussainalsairfi.github.io/publications/ro-feed-spacer-geometries-comparative-numerical-evaluation/</loc><lastmod>2026-10-08</lastmod></url><url><loc>https://hussainalsairfi.github.io/publications/offline-digital-twin-dynamic-ro-kuwait-solar/</loc><lastmod>2026-10-08</lastmod></url>  <url><loc>https://hussainalsairfi.github.io/publications/droplet-dynamics-buoyancy-thermocapillary-forces-mcm2026/</loc><lastmod>2026-11-02</lastmod></url>
+</urlset>
